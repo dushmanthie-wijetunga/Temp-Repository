@@ -1,0 +1,4 @@
+ControlFocus("open", "","Edit1")
+ControlSetText("open","","Edit1","Desktop\birthday.jpg")
+8.Identify the class and evrything by pointing to the  "open" button
+ControlClick("open',"","Button1")

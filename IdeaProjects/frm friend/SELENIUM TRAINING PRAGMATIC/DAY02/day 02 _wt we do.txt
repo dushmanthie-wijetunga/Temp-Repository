@@ -1,0 +1,98 @@
+//ellementName[@attributeName='value']
+
+<input name="txtUsername" id="txtUsername" type="text">
+
+//input[@name='txtUsername']
+//input[@id='txtUsername']
+//input[@type='text']// not unique
+===============
+
+//element name[@attribute1='value1'][@attribute2='value2']
+input[@name='txtUsername'][@id='txtUsername']
+====================
+//*[@attribute='value']
+
+//*[@name='txtUsername']
+//*[@id='txtUsername']
+//*[@type='text']// NOT  unique
+
+create a class "LoginHRmTest_withXpath"
+
+=======================
+//elementName[text()='exact text']
+//a[text()='Logout']
+
+//*[text()='exact text']
+//*[text()='Logout']
+
+Absolute Xpath: /html/body/div[1]/div/div[2]/form/div[2]/input
+
+
+==============================
+
+//elementName/childElement[@attributeName='Value']
+//form[@id='frmLogin']/div/input
+//form[@id='frmLogin']/div[2]/input        //username field
+ (It should not be brittle(minimum changes))
+//form[@id='frmLogin']/div[3]/input         //password
+//form[@id='frmLogin']/div[5]/input        //login button
+
+=================
+----CSS----
+elementName[attribute='value']
+input[id='txtUsername']
+
+Locating elements by ID
+#ID
+#txtUsername
+Method check
+if alredy checked
+do nothing
+else 
+click
+
+Method unCheck
+if alredy unchecked 
+do nothing
+
+else
+click
+=============
+upload,download or
+AutoIT
+
+steps:
+1.insatall AutoIT
+2.Simulate the required behavior (not supported by selenium)
+3.Invoke the AutoIT code from java code
+
+sikuli --other tool
+
+===========================
+managing pop up windows
+
+Alersts
+confirmation
+Prompts
+new window
+============
+explicit wait
+
+http://the-internet.herokuapp.com/
+
+http://the-internet.herokuapp.com/dynamic_loading/2 //progress bar
+
+
+===========================
+Home Work
+create maven project
+Add dependencies
+Add packages com.orange.login and com.orange.pim
+create a Test Base and add allcommon functionality 
+add test cases for login and add employees
+
+Expected features
+We should be able to switch between browsers
+all configuration should happen throught constant class
+
+

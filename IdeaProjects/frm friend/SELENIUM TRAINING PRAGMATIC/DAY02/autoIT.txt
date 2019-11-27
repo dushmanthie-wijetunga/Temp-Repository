@@ -1,0 +1,28 @@
+ControlFocus("open", "","Edit")
+
+
+1.Download  and insatall autoIT
+--recorder
+-editor
+
+2,navigate to the page(Add employee with file upload)
+3.start AutoIt recorder
+4.Click on Browse in web page(tpo file upload)
+Note:Selecting the file(pic)is not possible using Selenium WebDriver
+
+5.Drag and drop finder  tool to file name 
+6.Open autoIt editor
+7.File ->>New 
+
+ControlFocus("open", "","Edit1")
+ControlSetText("open","","Edit1","<file name fullpath>")
+8.Identify the class and evrything by pointing to the  "open" button
+ControlClick("open',"","Button1")
+
+save as ->file (FileUpload.aut)
+
+r.c on the file and identify the machine version (32/64 bit)
+then complile and receve the .exe file
+
+
+
